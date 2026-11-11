@@ -1,0 +1,25 @@
+# 1 人運用のため main のブランチ保護で Required review は無効。
+# 本ファイルは変更検知（通知とレビュー依頼の自動割当）のためだけに置く。
+# 2 人目の参加時にそのアカウントを追記し、Required review を有効化する（ADR で判定）。
+# 出典：GitHub 運用 V2 §5.1（2026-08-20 是正）
+
+# デフォルトオーナー
+*                       @pl-insight
+
+# 契約スキーマ (BP-13)
+contracts/              @pl-insight
+
+# 公開ステージ (S8)
+scripts/s8_publish/     @pl-insight
+
+# インフラ (Cloud Run / GPUWS / IAM)
+infra/                  @pl-insight
+
+# ドキュメントのみの変更
+docs/                   @pl-insight
+
+# ClaudeCode 設定（settings.json / agents / hooks / skills）
+.claude/                @pl-insight
+
+# GitHub Actions と secrets 設定
+.github/                @pl-insight
