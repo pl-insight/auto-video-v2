@@ -23,4 +23,4 @@ uv run pytest
 ## 進め方
 
 - 1 Issue＝1 PR。PR は Squash merge で、タイトルは Conventional Commits 形式にします（`pr-title` で自動検査）。
-- `main` は Ruleset「main-protection」で保護されています。必須チェックは lint・unit・pr-title です。
+- `main` は Ruleset「main-protection」で保護されています。必須チェックは lint・unit・pr-title・CodeQL です。
